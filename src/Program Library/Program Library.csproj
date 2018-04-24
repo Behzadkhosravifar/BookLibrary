@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59789221-F657-4258-9982-CCA8FD11D6B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Program_Library</RootNamespace>
+    <AssemblyName>Program Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ExcludedPermissions>
+    </ExcludedPermissions>
+    <ApplicationIcon>library.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <StartupObject>Program_Library.Program</StartupObject>
+    <ManifestCertificateThumbprint>5E9188E049DF1FB1DF575BACD5F7E5EC02EE9B7B</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Program Library_1_TemporaryKey.pfx</ManifestKeyFile>
+    <SignManifests>false</SignManifests>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://www.AzarAbadegan.net/Update/</UpdateUrl>
+    <ProductName>Program Library</ProductName>
+    <PublisherName>Program Library</PublisherName>
+    <MinimumRequiredVersion>3.2.1.2</MinimumRequiredVersion>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>3.2.1.4</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookBailment.cs" />
+    <Compile Include="BookInfo.cs" />
+    <Compile Include="CdBailment.cs" />
+    <Compile Include="CdInfo.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd.Designer.cs">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddC.Designer.cs">
+      <DependentUpon>FormAddC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBailment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBailment.Designer.cs">
+      <DependentUpon>FormBailment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBailmentC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBailmentC.Designer.cs">
+      <DependentUpon>FormBailmentC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBailmentCAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBailmentCAdd.Designer.cs">
+      <DependentUpon>FormBailmentCAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBailmentCDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBailmentCDelete.Designer.cs">
+      <DependentUpon>FormBailmentCDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBailmentCDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBailmentCDisplay.Designer.cs">
+      <DependentUpon>FormBailmentCDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePass.Designer.cs">
+      <DependentUpon>FormChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClearPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClearPass.Designer.cs">
+      <DependentUpon>FormClearPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelete.Designer.cs">
+      <DependentUpon>FormDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteC.Designer.cs">
+      <DependentUpon>FormDeleteC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisplay.Designer.cs">
+      <DependentUpon>FormDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisplayC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisplayC.Designer.cs">
+      <DependentUpon>FormDisplayC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOK.Designer.cs">
+      <DependentUpon>FormOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPass.Designer.cs">
+      <DependentUpon>FormPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPassOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPassOK.Designer.cs">
+      <DependentUpon>FormPassOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPic.Designer.cs">
+      <DependentUpon>FormPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrintPreView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrintPreView.Designer.cs">
+      <DependentUpon>FormPrintPreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch.Designer.cs">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchC.Designer.cs">
+      <DependentUpon>FormSearchC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program Library.Designer.cs">
+      <DependentUpon>Program Library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd.resx">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddC.resx">
+      <DependentUpon>FormAddC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBailment.resx">
+      <DependentUpon>FormBailment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBailmentC.resx">
+      <DependentUpon>FormBailmentC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBailmentCAdd.resx">
+      <DependentUpon>FormBailmentCAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBailmentCDelete.resx">
+      <DependentUpon>FormBailmentCDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBailmentCDisplay.resx">
+      <DependentUpon>FormBailmentCDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangePass.resx">
+      <DependentUpon>FormChangePass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClearPass.resx">
+      <DependentUpon>FormClearPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelete.resx">
+      <DependentUpon>FormDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteC.resx">
+      <DependentUpon>FormDeleteC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisplay.resx">
+      <DependentUpon>FormDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisplayC.resx">
+      <DependentUpon>FormDisplayC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOK.resx">
+      <DependentUpon>FormOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPass.resx">
+      <DependentUpon>FormPass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassOK.resx">
+      <DependentUpon>FormPassOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPic.resx">
+      <DependentUpon>FormPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrintPreView.resx">
+      <DependentUpon>FormPrintPreView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch.resx">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchC.resx">
+      <DependentUpon>FormSearchC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program Library.resx">
+      <DependentUpon>Program Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="library.ico" />
+    <Content Include="Program Library DB\Behzad.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Program Library DB\PatchB.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Program Library DB\PatchC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\clean.png" />
+    <None Include="Resources\Program Library.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
